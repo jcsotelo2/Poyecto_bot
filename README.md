@@ -1,65 +1,48 @@
-# Guía rápida de Markdown
+**# TALLER BOT DE VENTAS #**
 
-## Títulos
-```
-# Título principal
-## Subtítulo
-### Sub-subtítulo
-```
+**## PREGUNTA 1: ##**
 
-## Texto
-```
-**negrita**
-*cursiva*
-```
+*###  ¿(para su README): que hace glob.glob()? ###*
 
-## Listas
-```
-- Elemento 1
-- Elemento 2
-```
+glob.glob() — Busca archivos en una carpeta usando patrones (ej. *.csv) y devuelve la lista de rutas encontradas. Útil para leer varios archivos sin escribirlos uno por uno.
 
-## Listas numeradas
-```
-1. Primer paso
-2. Segundo paso
-```
+**## PREGUNTA 2: ##**
 
-## Bloques de código
-Para comandos o código, usa 3 comillas invertidas:
-\`\`\`
-pip install pandas
-\`\`\`
+*### ¿que hace pd.concat()? por que se ejecuta dos veces? ###*
 
-## Tabla simple
-```
-| Columna 1 | Columna 2 |
-|-----------|-----------|
-| Dato 1    | Dato 2    |
-```
+pd.concat() — Une varios DataFrames en uno solo (por defecto, uno debajo del otro). Se ejecuta dos veces porque probablemente primero junta los archivos leídos con glob.glob(), y luego combina ese resultado con otro dato distinto. (Compárteme el código si quieres la razón exacta.)
 
-Ejemplo aplicado — tabla de resultados:
-```
-| Categoría   | Total ventas |
-|-------------|--------------|
-| Electrónica | $3,361,610   |
-| Ropa        | $2,687,020   |
-```
+**## PREGUNTA 3: ##**
 
-## Enlaces
-```
-[Texto del enlace](https://ejemplo.com)
-```
+*### que hace enumerate()? por que se necesita aqui (i)? ###*
 
-## Emojis útiles para tu README (opcional)
-```
-🚀 Funcionalidades      📋 Descripción
-⚙️ Instalación          🐍 Tecnologías
-📝 Cómo usar            ✅ Completado
-🔧 Herramientas         💡 Notas
-```
+enumerate() — Recorre una lista y te da el índice (i) junto con cada valor. Se usa i cuando necesitas contar o numerar mientras procesas (ej. "archivo 1, archivo 2...").
 
-En Windows, para insertar cualquier emoji: presiona `Windows + .` 
-(punto) o `Windows + ;` (punto y coma), y se abre un panel para 
-buscar y elegir el que quieras.
+
+**## PREGUNTA 4: ##**
+
+*### que hace drop_duplicates()? que hace fillna()? ###*
+
+drop_duplicates(): borra filas repetidas.
+fillna(): rellena los valores vacíos (NaN) con algo que tú definas.
+
+**## PREGUNTA 5: ##**
+
+*### que hace groupby()? ¿cual es la diferencia entre el # grafico de barras y el de torta, cuando usar cada uno?###*
+
+groupby(): agrupa filas por una columna (ej. categoría) para sacar totales, promedios, etc.
+Barras: para comparar valores entre categorías.
+Torta: para mostrar cómo se reparte un total en porcentajes. 
+
+
+
+
+
+
+
+
+
+
+
+
 
